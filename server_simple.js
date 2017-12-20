@@ -14,8 +14,8 @@ HOW TO START SERVER:
 var http = require('http');
 
 // define the IP and port number
-//var localIP = "127.0.0.1"; // 127.0.0.1 is used when running the server locally
-var localIP = "172.31.64.233"; // 127.0.0.1 is used when running the server locally
+var localIP = "0.0.0.0"; // 127.0.0.1 is used when running the server locally
+//var localIP = "172.31.64.233"; // 127.0.0.1 is used when running the server locally
 var port = 8080; // port to run webserver on
 
 function sayHello(req, res) {
@@ -27,7 +27,7 @@ function sayHello(req, res) {
 
     // Write out the HTTP response body
     res.write('<html><body>' +
-    '<h1>Hello Dynamic World Wide Web<h1>'+
+    '<h1>Mi primera web<h1>'+
     '</body></html>');
     
     // End of HTTP response
